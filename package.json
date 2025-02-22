@@ -1,0 +1,37 @@
+{
+  "name": "solaverse-token",
+  "version": "1.0.0",
+  "description": "Test Token using Solana Token-2022 Program",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc",
+    "deploy": "ts-node src/deploy.ts",
+    "deploy:devnet": "SOLANA_NETWORK=devnet npm run deploy",
+    "deploy:mainnet": "SOLANA_NETWORK=mainnet-beta npm run deploy",
+    "cleanup": "ts-node src/cleanup.ts"
+  },
+  "keywords": [
+    "solana",
+    "token-2022",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "author": "Test Team",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.90.0",
+    "dotenv": "^16.4.1",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.16",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+} 
